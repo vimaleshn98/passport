@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 import com.mindtree.Passport.entity.Passport;
 import com.mindtree.Passport.entity.Person;
-import com.mindtree.Passport.exception.serviceexception.ConnectivityService;
 import com.mindtree.Passport.exception.serviceexception.PersonidNotservice;
 import com.mindtree.Passport.service.PassportService;
 import com.mindtree.Passport.service.impl.PassportServiceimpl;
