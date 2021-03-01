@@ -57,13 +57,7 @@ pipeline{
                 }
             }
         }
-        stage("build & SonarQube analysis") {
-            steps {
-              withSonarQubeEnv('sonarqube2') {
-                sh 'mvn sonar:sonar'
-            }
-        }
-    }
+       
           stage("Deployee"){
            when {
                 expression {
