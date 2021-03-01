@@ -23,13 +23,7 @@ pipeline{
                 }
             }
         }
-        stage("build & SonarQube analysis") {
-            steps {
-              withSonarQubeEnv('sonarqube') {
-                sh 'mvn verify sonar:sonar'
-              }
-            }
-          }
+        
         stage("Test"){
             steps{
                 echo "Maven Test"
